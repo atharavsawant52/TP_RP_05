@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var techpathshalaStudents={
+            title:"React Mastery VPM",
+            totalNoOfStudents:25,
+            nameOfStudents:["Jay","Sandesh","Atharav","Akilesh"],
+            languages:["Html","Css","JavaScript","ReactJS"],
+            teacher:"Munaf Hajir",
+            lectureDays:["Monday","Wednesday","Friday"],
+            lectureDuration:"2hrs",
+            CourseDuration:"72 hrs",
+            place:"Techpaathshala,Vikhroli",
+
+        }
+        
+        //object value display 
+        console.log(techpathshalaStudents);
+        console.log(techpathshalaStudents.title);
+        console.log(techpathshalaStudents.place);
+        console.log(techpathshalaStudents.nameOfStudents);
+        
+
+        //change value in object
+        techpathshalaStudents.totalNoOfStudents=17;
+        console.log(techpathshalaStudents.totalNoOfStudents);
+        console.log(techpathshalaStudents.teacher);
+
+        //delete object
+        delete techpathshalaStudents.lectureDays;
+        console.log(techpathshalaStudents);
+
+        // freeze value
+        Object.freeze(techpathshalaStudents);
+        console.log(techpathshalaStudents);
+    </script>
+</body>
+</html>

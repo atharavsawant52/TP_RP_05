@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+  </head>
+  <body style="margin: 0%; padding: 0%">
+    <!-- Input div -->
+    <div>
+      <!-- Text Input code -->
+      <div>
+        <input type="text" id="task" />
+      </div>
+      <!-- Button to add text -->
+      <div>
+        <button onclick="addTask()">ADD</button>
+      </div>
+    </div>
+
+    <!-- Output div -->
+    <div>
+      <ul id="taskList"></ul>
+    </div>
+  </body>
+
+  <script>
+    function addTask() {
+      var task = document.getElementById("task").value;
+      const li = document.createElement("li");
+      li.innerHTML = task;
+      var taskList = document.getElementById("taskList").appendChild(li);
+      completeButton();
+    }
+
+    function completeButton() {
+      var task = document.getElementById("task").value;
+      const button = document.createElement("button");
+      completeButton.textContent = "Complete";
+      button.innerHTML = task;
+      var taskList = document.getElementById("taskList").appendChild(button);
+      li.appendChild(completeBtn);
+    }
+  </script>
+</html>

@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PERFUME</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body
     style="
       margin: 0%;
@@ -15,6 +20,7 @@
       align-items: center;
     "
   >
+    <!-- main div css -->
     <div
       style="
         display: flex;
@@ -22,43 +28,64 @@
         border-radius: 10px;
         overflow: hidden;
         height: auto;
-        width: 500px;
+        width: 510px;
         margin-top: 100px;
       "
     >
+      <!-- perfume img  -->
       <div>
         <img src="./assets/new.jpeg" width="250px" height="100%" />
       </div>
+
+      <!-- All card details -->
       <div style="padding: 20px">
-        <h3 style="letter-spacing: 3px; font-size: xx-small">PERFUME</h3>
-        <h1 style="font-family: Arial, sans-serif">
+        <h3 style="letter-spacing: 3px; font-size: x-small; color: #757575">
+          PERFUME
+        </h3>
+
+        <!-- Product Name -->
+        <h1 style="font-family: Fraunces, serif">
           Gabrielle <br />Essence Eau <br />De Parfum
         </h1>
-        <p style="font-size: 14px; color: #757575; margin: 10px 0">
+
+        <!-- Product information Section and css -->
+        <p
+          style="
+            font-size: 14px;
+            color: #757575;
+            margin: 10px 0;
+            font-family: Montserrat, sans-serif;
+          "
+        >
           A floral,solar and voluptuous <br />
           interpretation composed by <br />
           Olivier Polge,Perfumer-Creator <br />
           for the House of CHANEL
         </p>
 
+        <!-- Price section -->
         <div style="display: flex">
-          <h1 style="color: rgb(3, 90, 3)">$149.99</h1>
+          <h1 style="color: rgb(3, 90, 3); font-family: Fraunces, serif">
+            $149.99
+          </h1>
           <h3
             style="
               font-size: x-small;
               text-decoration: line-through;
               padding-top: 25px;
               padding-left: 10px;
+              color: #757575;
             "
           >
             $169.99
           </h3>
         </div>
 
+        <!-- Button Section -->
         <button
           style="
-            display: inline-block;
-            background-color: #388e3c;
+            display: inline;
+            background-color: #2e6732;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -70,8 +97,8 @@
           "
         >
           <img
-            src="https://img.icons8.com/ios-filled/24/ffffff/shopping-cart.png"
-            style="color: white; margin-right: 8px"
+            src="./assets/cart.png"
+            style="margin-right: 8px; color: aliceblue; height: 20px"
           />
           Add to Cart
         </button>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+   
+    <title>CERTIFICATE</title>
+  </head>
+
+
+  <body style="margin: 0%; padding: 0%">
+    <div style="border: 1px solid; text-align: center; margin: 25px 25px 25px">
+      <div style="display: flex; justify-content: space-between">
+        <div><img src="./assets/CBL.jpg"  height="70px"></div>
+        <div style="text-align: center">
+          <h1 style="font-family: Arial, Helvetica, sans-serif">CERTIFICATE</h1>
+          <h2 style="font-size: small; color: #757575">OF APPRECIATION</h2>
+        </div>
+
+        <div><img src="./assets/companyLogo.png" / height="80px"></div>
+      </div>
+
+      <div style="text-align: center; font-size: medium">
+        <h3>PROUDLY PRESENTED TO</h3>
+      </div>
+
+      <div style="text-align: center; margin-top: 80px">
+        <h1
+          id="namePrint"
+          style="font-family: 'Courier New', Courier, monospace"
+        ></h1>
+        <hr style="width: 65%" />
+        <p
+          style="
+            font-size: medium;
+            color: #414141;
+            font-family: Montserrat, sans-serif;
+          "
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          quisquam non inventore <br />
+          voluptate unde. Sed cupiditate quo maiores autem fugit sint minus,
+          delectus consectetur hic tenetur <br />
+          iure? Quas error alias eligendi totam cum, laborum veritatis! Lorem
+          ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Praesentium, fugit. Atque id laboriosam at ad eos
+          accusantium, ullam adipisci nesciunt.
+        </p>
+      </div>
+
+      <div
+        style="display: flex; justify-content: space-evenly; padding-top: 20px"
+      >
+        <div style="margin-left: 20px">
+          <h1
+            id="datePrint"
+            style="font-size: medium; font-family: Montserrat, sans-serif"
+          ></h1>
+          <hr style="width: 120px" />
+        </div>
+
+        <div style="margin-right: 35px">
+          <h6
+            style="
+              display: inline;
+              font-family: cursive;
+              font-size: medium;
+            "
+          >
+            atharav
+          </h6>
+          <hr style="width: 120px" />
+        </div>
+      </div>
+
+      <div
+        style="
+          font-size: small;
+          display: flex;
+          justify-content: space-evenly;
+          color: #5e5c5c;
+        "
+      >
+        <h3>Date</h3>
+        <h3>Signature</h3>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function getData() {
+      const name = localStorage.getItem("name");
+      const date = localStorage.getItem("date");
+      document.getElementById("namePrint").textContent = name;
+      document.getElementById("datePrint").textContent = date;
+    }
+
+    window.onload = getData;
+  </script>
+</html>

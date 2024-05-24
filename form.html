@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+
+  <body>
+    <div style="display: flex;flex-direction: column; justify-content: space-between; align-items: center;">
+      <h1>Enter a name</h1>
+    <input id="name" type="text" placeholder="Enter Full Name"  style="height: 40px; width: 200px;"/>
+    <h2>Date</h2>
+    <input id="date" type="date" />
+    <button onclick="submitForm()" style="height: 40px; width: 80px; margin-top: 20px;"  >submit</button>
+    </div>
+  </body>
+  
+  <script>
+    function submitForm() {
+        const name = document.getElementById("name").value;
+        const date = document.getElementById("date").value;
+        localStorage.setItem("name", name);
+        localStorage.setItem("date", date);
+        window.location.href = "certificate.html";
+    }
+</script>
+</html>

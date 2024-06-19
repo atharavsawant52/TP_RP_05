@@ -1,3 +1,11 @@
+/* Global Selector */
+*{
+    /* CSS Reset */
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
 /* Tag Selector */
 
 h1{
@@ -11,3 +19,7 @@ h1{
 }
 
 /* Class Selector */
+
+.form-input{
+    padding: 10px;
+}

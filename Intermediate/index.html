@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="./assets/form.css">
-  </head>
-  <body>
-    <!--Login page-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="./assets/form.css" />
+</head>
+<body>
+  <!-- Login page -->
+
+  <form action="index.php" method="post">
+    <div>
+      <h1 class="heading">Login</h1>
+      <label for="username"> <b>Username</b> </label> <br />
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Type your username"
+        class="form-input"
+        required
+      />
+      <br />
+    </div>
 
     <div>
-      <h1>Login Form</h1>
-      <h1 id="login">Output</h1>
-
-      <form action="" method="post">
-        <label> User-Name</label>
-        <input type="text" placeholder="user-id" class="form-input" />
-        <label>password</label>
-        <input type="password" placeholder="password"  class="form-input" />
-        <input type="submit" value="submit" />
-      </form>
+      <label for="password">Password</label> <br />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Type your password"
+        class="form-input"
+        required
+      />
+      <br />
     </div>
-  </body>
+
+    <div>
+      <input type="submit" value="Login" class="form-submit" />
+    </div>
+  </form>
+</body>
 </html>

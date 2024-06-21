@@ -61,6 +61,9 @@ label {
 /* Login Section end */
 
 
+/* Main.html css start */
+
+
 /* Navbar Section Start */
 
 nav{
@@ -98,3 +101,19 @@ div:first-child{
   color: rgb(83, 94, 94);
 }
 /* Navbar Section end  */
+
+/* first section start */
+
+.first-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #FFFBE9;
+  color: #312218;
+}
+
+.first-section-descripton{
+  font-size: 3.5vh;
+}

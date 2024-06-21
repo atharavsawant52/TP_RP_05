@@ -23,7 +23,7 @@ h1 {
   text-align: center;
 }
 
-form {
+.form1 {
   background-color: #f7f6f6;
   padding: 20px;
   border-radius: 8px;
@@ -116,4 +116,26 @@ div:first-child{
 
 .first-section-descripton{
   font-size: 3.5vh;
+}
+
+/* first section end */
+
+/* Name form section start */
+
+.name-form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.form-input{
+  width: 380px;
+  height: 40px;
+}
+
+.form-button{
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
 }

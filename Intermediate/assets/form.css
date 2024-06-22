@@ -1,3 +1,9 @@
+:root{
+  --primary: #F1E5D1;
+  --secondary: #292929;
+  --dark: black;
+}
+
 *{
   margin: 0%;
   padding: 0%;
@@ -72,8 +78,8 @@ nav{
   justify-content: space-between;
   border: 1px solid black;
   align-items: center;
-  background-color: #B6C7AA;
-  color: #292929;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 nav > div > ul{
@@ -92,7 +98,7 @@ nav > div >h1{
 }
 
 nav > div > ul > li:hover{
-  color: #413737;
+  color: var(--secondary);
   cursor: pointer;
   text-decoration: underline;
 }
@@ -131,7 +137,7 @@ div:first-child{
   margin-top: 5px;
   border: 1px solid black;
   border-radius: 10px;
-
+margin-top: 20px;
 }
 
 .form-input{

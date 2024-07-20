@@ -23,3 +23,9 @@ let text = fruits.join();
 
 //splice
 //reduce
+
+
+
+
+
+

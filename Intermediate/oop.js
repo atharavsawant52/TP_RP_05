@@ -29,8 +29,9 @@ class Student{
     updatedAddress(){
         
     }
-    updatedPassword(){
-
+    updatedPassword(password){
+         console.log("Update password");
+         this.password = password;
     }
 
     updatedEmail(){
@@ -40,7 +41,11 @@ class Student{
 
 const studentForm = new Student("atharav","attu2gmail.com",100,"React","mulund","atharav123","Atharav@02");
 
-console.log(studentForm);
+console.log("Password :- ",studentForm.password);
+
+studentForm.updatedPassword("atharav@123");
+
+console.log("updated Password :- ",studentForm.password);
 
 
 
